@@ -1,4 +1,6 @@
-﻿Console.Write("Введите число дня недели: ");
+﻿// 2. По заданному номеру дня недели вывести его название
+
+Console.Write("Введите число дня недели: ");
 int D = int.Parse(Console.ReadLine());
 int a = 1;
 int b = 2;
