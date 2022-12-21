@@ -7,14 +7,14 @@
 
 
 Console.Write("Введите первое число: ");
-int N = int.Parse(Console.ReadLine());
+int A = int.Parse(Console.ReadLine());
 Console.Write("Введите второе число: ");
-int S = int.Parse(Console.ReadLine());
-int N1 = N;
+int B = int.Parse(Console.ReadLine());
+int A1 = A;
 int i = 1;
-while (i < S)
+while (i < B)
 {
-    N1 = N1*N;
+    A1 = A1*A;
     i++;
 }
-Console.WriteLine(N1);
+Console.WriteLine(A1);
