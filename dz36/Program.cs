@@ -5,13 +5,13 @@
 
 // [-4, -6, 89, 6] -> 0
 
-int[] array = new int [10];
+int[] array = new int [5];
 int sum = 0;
 
 Console.Write("[");
 for (int i = 0; i <array.Length; i++)
 {
-    int randomNumber = new Random().Next(0, 10);
+    int randomNumber = new Random().Next(-10, 10);
     array [i] = randomNumber;
     Console.Write(array [i].ToString() + ", ");
     
