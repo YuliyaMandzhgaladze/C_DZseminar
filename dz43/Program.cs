@@ -11,7 +11,6 @@
 void CrossPoint(double k1, double b1, double k2, double b2)
 {
 double x = (b1-b2)/(k2-k1);
-// double y = (k2*b1-k1*b2)/(k2-k1);
 double y = k1*x+b1;
 if(k1==k2) Console.Write("Заданные прямые не пересекаются!");
 else
