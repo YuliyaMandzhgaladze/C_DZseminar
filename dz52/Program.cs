@@ -7,45 +7,45 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-void FillArray (int[, ]matr)
+void FillArray (int[, ]array)
 {
-    for (int i=0; i<matr.GetLength(0); i++)
+    for (int i=0; i<array.GetLength(0); i++)
     {
-        for (int j=0; j<matr.GetLength(1); j++)
+        for (int j=0; j<array.GetLength(1); j++)
         {
-            matr[i,j] = new Random().Next(1,10);
+            array[i,j] = new Random().Next(1,10);
         }
         Console.WriteLine();
     }
 }
-void PrintArray (int[, ]matr)
+void PrintArray (int[, ]array)
 {
-    for (int i=0; i<matr.GetLength(0); i++)
+    for (int i=0; i<array.GetLength(0); i++)
     {
-        for (int j=0; j<matr.GetLength(1); j++)
+        for (int j=0; j<array.GetLength(1); j++)
         {
-            Console.Write($"{matr[i, j]} ");
+            Console.Write($"{array[i, j]} ");
         }
         Console.WriteLine();
     }
 }
-int [, ] matrix = new int [3, 4];
-FillArray(matrix);
+int [, ] arrayDone = new int [3, 4];
+FillArray(arrayDone);
 
-PrintArray(matrix);
+PrintArray(arrayDone);
 
 Console.WriteLine();
 Console.WriteLine("Среднее арифметическое элементов в каждом столбце: ");
 
-for (int j = 0; j < matrix.GetLength(1); j++)
+for (int j = 0; j < arrayDone.GetLength(1); j++)
 {
     double sum = 0;
     double sredneeArifm = 0;
    
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < arrayDone.GetLength(0); i++)
     {
-        sum += matrix[i, j];
-        sredneeArifm = sum / matrix.GetLength(0);
+        sum += arrayDone[i, j];
+        sredneeArifm = sum / arrayDone.GetLength(0);
         sredneeArifm = Math.Round(sredneeArifm, 2);
     }
     
