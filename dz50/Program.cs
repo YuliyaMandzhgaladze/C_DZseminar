@@ -42,6 +42,9 @@ PrintArray(arrayDone);
 
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
+int m = -1;
+int n = -1;
+
 
 for (int i = 0; i < arrayDone.GetLength(0); i++)
 {
@@ -50,22 +53,21 @@ for (int i = 0; i < arrayDone.GetLength(0); i++)
         if (number == arrayDone[i, j])
         {
             Console.WriteLine("Индексы числа: "+i+", "+j);
-          
-            return;
+            
+            m = i;
+            n = j;
+            Console.WriteLine("Индексы числа: "+m+", "+n);
 
         }
-        if (number > arrayDone[i, j]&& number < arrayDone[i, j])
-            {
-                Console.Write("нет");
-                return;
-            }
-        
-
-        
 
     }
 }
-
+if (m == -1 && n == -1)
+{
+    Console.Write("Такого элемента нет в массиве!");
+    // return;
+}
+  
 
 
 
