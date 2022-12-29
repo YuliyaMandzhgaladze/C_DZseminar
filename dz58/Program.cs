@@ -38,7 +38,7 @@ int [, ] array3 = new int [2, 2];
 
 FillArray(array1);
 PrintArray(array1);
-
+Console.WriteLine();
 FillArray(array2);
 PrintArray(array2);
 Console.WriteLine();
