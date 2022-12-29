@@ -18,7 +18,6 @@ void FillArray (int[, ]array)
         {
             array[i,j] = new Random().Next(1,11);
         }
-        Console.WriteLine();
     }
 }
 void PrintArray (int[, ]array)
